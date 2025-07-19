@@ -1,0 +1,44 @@
+.chatBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+
+}
+
+
+.chatTextLeft{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+
+}
+
+
+.codeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.code{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(58, 58, 58);
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+.code p{
+    color: white;
+    text-align: left;
+    padding: 15px;
+
+}
+

@@ -1,8 +1,6 @@
-.intro {
-    text-align: center;
-    margin-top: 300px;
+body{
+    background-color: rgb(27, 27, 27);
 }
-
 h1{
     font-size: 3rem;
     margin-bottom: 30px;
@@ -16,62 +14,10 @@ h2{
 }
 p{
     font-size: 1.2rem;
-    color: gray;
+    color: rgb(165, 165, 165);
     text-align: center;
 }
 
-.intro-text{
-    padding: 0 400px;
-}
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #393939;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-  }
 
-  .navbar-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .navbar-title {
-    font-size: 1.5rem;
-    margin-right: 20px;
-  }
-
-  .navbar-links {
-    display: flex;
-  }
-
-  .navbar-link {
-    margin-right: 20px;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .navbar-link:hover {
-    color: white;
-  }
-  
-  .footer {
-    background-color: #393939;
-    padding: 10px;
-    text-align: center;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-  }
 

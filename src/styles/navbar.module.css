@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #393939;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+.navbarContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.navbarTitle {
+    margin-right: 30px;;
+}
+
+.navbarLinks {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbarLink {
+    margin-right: 20px;
+    text-decoration: none;
+    color: grey;
+}
+  
+.navbarLink:hover {
+    color: white;
+}
+  

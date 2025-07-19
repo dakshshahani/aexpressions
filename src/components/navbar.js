@@ -1,18 +1,18 @@
 import React from "react";
-
+import styles from '../styles/navbar.module.css';
 export default function Navbar() {
   return (
-    <nav className="navbar">
-      <div className="navbar-content">
-        <p className="navbar-title">AExpressions</p>
-        <div className="navbar-links">
-            <a href="/popularExpressions" className="navbar-link">
+    <nav className={styles.navbar}>
+      <div className={styles.navbarContent}>
+        <p className={styles.navbarTitle}>AExpressions</p>
+        <div className={styles.navbarLinks}>
+            <a href="/popularExpressions" className={styles.navbarLink}>
               Popular Expressions
             </a>
-            <a href="/chat" className="navbar-link">
+            <a href="/chat" className={styles.navbarLink}>
             Ask AI
-          </a>
-          <a href="/about" className="navbar-link">
+            </a>
+            <a href="/about" className={styles.navbarLink}>
             About
           </a>
         </div>
