@@ -1,6 +1,8 @@
 import styles from '../styles/intro.module.css';
-
+import { useState } from 'react';
 export default function Intro() {
+
+    const [isScrolled, setIsScrolled] = useState(false);
   return (
     <div id = "AExpressions" className={styles.introContainer}>
         <div className={styles.intro}>
@@ -9,7 +11,7 @@ export default function Intro() {
             <p className={styles.introText}>
             Discover powerful expressions to automate animations, create complex effects, and streamline your workflow. From simple wiggles to advanced mathematical formulas, find exactly what you need to bring your compositions to life. </p>
             <div className={styles.introButton}>
-                <button>Start Exploring</button>
+                <button onClick = {() => setIsScrolled(true)}>Start Exploring</button>
             </div>
         </div>
 

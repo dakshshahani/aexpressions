@@ -7,11 +7,13 @@ export default function PopularExpressions() {
   return (
     <div id="popularExpressions">
       <div className={styles.page}>
-        <h2 className={styles.pageTitle}>Popular Expressions</h2>
-        <p className={styles.pageDescription}>
-          These are the most popular expressions that you can use in After
-          Effects
-        </p>
+        <div>
+          <h2 className={styles.pageTitle}>Popular Expressions</h2>
+          <p className={styles.pageDescription}>
+            These are the most popular expressions that you can use in After
+            Effects
+          </p>
+        </div>
         <div className={styles.popularExpressionsContainer}>
           {expressionList.map((expression) => (
             <Card
