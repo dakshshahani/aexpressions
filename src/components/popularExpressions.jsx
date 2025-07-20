@@ -10,8 +10,7 @@ export default function PopularExpressions() {
         <div>
           <h2 className={styles.pageTitle}>Popular Expressions</h2>
           <p className={styles.pageDescription}>
-            These are the most popular expressions that you can use in After
-            Effects
+            Essential expressions every After Effects artist should know.
           </p>
         </div>
         <div className={styles.popularExpressionsContainer}>

@@ -1,20 +1,36 @@
-import styles from '../styles/intro.module.css';
-import { useState } from 'react';
+import styles from "../styles/intro.module.css";
+import { useState } from "react";
+import { Check, ChevronDown } from "lucide-react";
+
+
 export default function Intro() {
+  const [isScrolled, setIsScrolled] = useState(false);
 
-    const [isScrolled, setIsScrolled] = useState(false);
+  function scrollToContent() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+    setIsScrolled(true);
+  }
   return (
-    <div id = "AExpressions" className={styles.introContainer}>
-        <div className={styles.intro}>
-            <h1>AExpressions</h1>
-            <h2>Here to help you with After Effects Math 🤓</h2>
-            <p className={styles.introText}>
-            Discover powerful expressions to automate animations, create complex effects, and streamline your workflow. From simple wiggles to advanced mathematical formulas, find exactly what you need to bring your compositions to life. </p>
-            <div className={styles.introButton}>
-                <button onClick = {() => setIsScrolled(true)}>Start Exploring</button>
-            </div>
-        </div>
-
+    <div id="AExpressions" className={styles.introContainer}>
+      <div className={styles.intro}>
+        <h1>AExpressions</h1>
+        <h2>Here to help you with <span>After Effects Math</span> 🤓</h2>
+      </div>
+      <p className={styles.introText}>
+        Discover powerful expressions to automate animations, create complex
+        effects, and streamline your workflow. From simple wiggles to advanced
+        mathematical formulas, find exactly what you need to bring your
+        compositions to life.{" "}
+      </p>
+      <div className={styles.introButton}>
+        <button onClick={scrollToContent}>
+            <span>Start Exploring</span>
+            <ChevronDown />
+        </button>
+      </div>
     </div>
   );
-}   
+}

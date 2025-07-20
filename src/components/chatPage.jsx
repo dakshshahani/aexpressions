@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/chatPage.module.css";
+import Button from "./Button";
 
 export default function ChatPage() {
   return (
@@ -12,8 +13,8 @@ export default function ChatPage() {
           <form>
             <input type="text" placeholder="camera shake wiggle expression.." />
            <div className={styles.buttons}>
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
+            <Button type="submit" text="Submit" />
+            <Button type="reset" text="Reset" />
            </div>
           </form>
         </div>
