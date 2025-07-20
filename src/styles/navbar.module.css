@@ -1,3 +1,4 @@
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -36,6 +37,7 @@
   
 .navbarLink:hover {
     color: white;
+    transition: color 0.3s ease;  
 }
 
 

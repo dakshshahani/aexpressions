@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
 @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 </style>
         </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body>
         {children}
       </body>
     </html>
