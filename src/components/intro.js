@@ -2,7 +2,7 @@ import styles from '../styles/intro.module.css';
 
 export default function Intro() {
   return (
-    <div className={styles.introContainer}>
+    <div id = "AExpressions" className={styles.introContainer}>
         <div className={styles.intro}>
             <h1>AExpressions</h1>
             <h2>Here to help you with After Effects Math 🤓</h2>

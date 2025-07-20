@@ -3,7 +3,8 @@ import styles from "../styles/chatPage.module.css";
 
 export default function ChatPage() {
   return (
-    <div className={styles.page}>
+    <div id = "chat">
+        <div className={styles.page}>
       <h2 className={styles.pageTitle}>Chat with AExpressions</h2>
       <div className={styles.chatBox}>
         <div className={styles.chatTextLeft}>
@@ -25,6 +26,7 @@ export default function ChatPage() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
