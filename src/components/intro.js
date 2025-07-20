@@ -1,6 +1,7 @@
 import styles from "../styles/intro.module.css";
 import { useState } from "react";
-import { Check, ChevronDown } from "lucide-react";
+
+import FirstButton from "./FirstButton";
 
 
 export default function Intro() {
@@ -26,10 +27,7 @@ export default function Intro() {
         compositions to life.{" "}
       </p>
       <div className={styles.introButton}>
-        <button onClick={scrollToContent}>
-            <span>Start Exploring</span>
-            <ChevronDown />
-        </button>
+       <FirstButton />
       </div>
     </div>
   );
