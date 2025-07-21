@@ -27,7 +27,14 @@
 .introButton{
     position: relative;
     top : 300px;
+    color: white;
+    transition: color 0.3s ease;
 }
+
+.introButton:hover{
+    color: rgb(82, 62, 238);
+    transition: color 0.3s ease;
+}   
 
 
 

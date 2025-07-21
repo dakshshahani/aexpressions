@@ -11,7 +11,7 @@ export default function PopularExpressions() {
           <h2 className={styles.pageTitle}>Popular Expressions</h2>
           <p className={styles.pageDescription}>
             Essential expressions every After Effects artist should know.
-          </p>
+          </p>  
         </div>
         <div className={styles.popularExpressionsContainer}>
           {expressionList.map((expression) => (
