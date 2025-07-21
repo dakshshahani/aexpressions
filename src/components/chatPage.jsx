@@ -22,7 +22,7 @@ export default function ChatPage() {
           <p>Copy the code and paste it into your After Effects project.</p>
           <div className={styles.code}>
             <code>
-              <p>camera shake wiggle expression..</p>
+                wiggle(0.5, 0.5, 0.5, 0.5)....
             </code>
           </div>
         </div>

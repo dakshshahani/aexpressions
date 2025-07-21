@@ -15,7 +15,6 @@
 }
 .chatTextLeft p{
     color: white;
-    text-align: left;
 }
 
 .chatTextLeft form{
@@ -44,7 +43,6 @@
     border-radius: 5px;
     border: none;
     padding: 10px;
-    margin-bottom: 10px;
     text-wrap: wrap;
 }
 
@@ -53,7 +51,7 @@
     align-items: center;
     justify-content: space-evenly;
     width: 500px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 
@@ -62,7 +60,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-
     width: 500px;
     height: 500px;
 }
@@ -80,8 +77,13 @@
     border-radius: 10px;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3);
     margin-top: 20px;
+    padding : 15px;
+
 }
 
+.code code{
+    color: white;
+}
 .code p{
     color: white;
     text-align: left;
