@@ -3,6 +3,11 @@ import styles from "../styles/chatPage.module.css";
 import Button from "./Button";
 
 export default function ChatPage() {
+
+    const [prompt, setPrompt] = useState("");
+
+    function callOpenAIAPI(){
+    }
   return (
     <div id = "chat">
         <div className={styles.page}>
@@ -11,9 +16,9 @@ export default function ChatPage() {
         <div className={styles.chatTextLeft}>
           <p>Enter your expression and we'll create it for you!</p>
           <form>
-            <input type="text" placeholder="camera shake wiggle expression.." />
+            <input type="text" onChange={(e) => setPrompt(e.target.value)} placeholder="camera shake wiggle expression.." />
            <div className={styles.buttons}>
-            <Button type="submit" text="Submit" />
+            <Button onClick={callOpenAIAPI} type="submit" text="Submit" />
             <Button type="reset" text="Reset" />
            </div>
           </form>

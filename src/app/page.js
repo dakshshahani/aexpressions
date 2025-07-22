@@ -13,6 +13,7 @@ export default function Home() {
      <PopularExpressions />
      <ChatPage />
      <Footer />
+     console.log("hello");
   </div>
   );
 }
