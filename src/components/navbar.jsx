@@ -2,19 +2,21 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/navbar.module.css";
 export default function Navbar() {
   const [hover, setHover] = useState(false);
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       if (window.scrollY > 50) {
-//         setHover(true);
-//       } else {
-//         setHover(false);
-//       }
-//     };
-//     window.addEventListener("scroll", handleScroll);
-//     return () => {
-//       window.removeEventListener("scroll", handleScroll);
-//     };
-//   }, []);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 400) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   function handleMouseEnter() {
     setHover(true);
@@ -24,7 +26,7 @@ export default function Navbar() {
     setHover(false);
   }
   return (
-    <nav className={styles.navbar}>
+    <nav className={isScrolled ? styles.navbar : styles.navbarHidden}>
       <div className={styles.navbarContent}>
         <a
           onMouseEnter={handleMouseEnter}
