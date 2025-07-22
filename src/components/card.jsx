@@ -9,7 +9,7 @@ export default function Card(props) {
         <div className={styles.cardContent}>
             <h3 className = {styles.cardTitle}>{props.title}</h3>
             <p className = {styles.cardDescription}>{props.description}</p>
-            <Button text="Learn More" />
+            <Button onClick={props.onClick(props.id)} text="Learn More" />
         </div>
     </div>
     </div>
