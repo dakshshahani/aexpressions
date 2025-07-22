@@ -12,7 +12,14 @@ export default function ExpandedCard(props) {
             {props.data.icon} {props.data.title}
           </h2>
           <div className={styles.button} onClick={props.onClose}>
-            <img src={close} alt="close" />
+            <svg width="20" height="20" viewBox="0 0 20 20">
+              <path
+                d="M 5,5 L 15,15 M 15,5 L 5,15"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </div>
         </div>
         <div className={styles.codeContainer}>

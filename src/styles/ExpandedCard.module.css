@@ -30,17 +30,21 @@
     font-size: 1.2rem;
 }
 
+
 .button {
+    cursor: pointer;
+}
+.button svg{
   font-size: 1rem;
-  transition: color 0.3s ease;
-  cursor: pointer;
+  transition: stroke 0.3s ease;
   font-weight: bolder;
   background-size: 100%;
+  stroke: white;
 }
 
-.button:hover {
-  color: rgb(82, 62, 238);
-  transition: color 0.3s ease;
+.button:hover svg{
+  stroke: rgb(82, 62, 238);
+  transition: stroke 0.3s ease;
 }
 
 .cardSection {
