@@ -2,19 +2,29 @@ import React from "react";
 import expressionList from "./expressionList";
 import styles from "../styles/popularExpressions.module.css";
 import Card from "./card";
+import ExpandedCard from "./ExpandedCard";
 import { useState } from "react";
 
 export default function PopularExpressions() {
   const [selectedExpression, setSelectedExpression] = useState(null);
 
   function handleClick(id) {
-    console.log(id);
+    setSelectedExpression(
+      expressionList.find((expression) => expression.id === id)
+    );
   }
 
   return (
     <div id="popularExpressions">
       <div className={styles.page}>
         <div>
+          {selectedExpression && (
+            <ExpandedCard
+              data={selectedExpression}
+              onClose={() => setSelectedExpression(null)}
+            />
+          )}
+
           <h2 className={styles.pageTitle}>Popular Expressions</h2>
           <p className={styles.pageDescription}>
             Essential expressions every After Effects artist should know.
