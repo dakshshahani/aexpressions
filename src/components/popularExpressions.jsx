@@ -5,12 +5,11 @@ import Card from "./card";
 import { useState } from "react";
 
 export default function PopularExpressions() {
+  const [selectedExpression, setSelectedExpression] = useState(null);
 
-    const [selectedExpression, setSelectedExpression] = useState(null);
-
-    function handleClick(id) {
-        setSelectedExpression(expressionList.find(expression => expression.id === id));
-    };
+  function handleClick(id) {
+    console.log(id);
+  }
 
   return (
     <div id="popularExpressions">
@@ -19,12 +18,13 @@ export default function PopularExpressions() {
           <h2 className={styles.pageTitle}>Popular Expressions</h2>
           <p className={styles.pageDescription}>
             Essential expressions every After Effects artist should know.
-          </p>  
+          </p>
         </div>
         <div className={styles.popularExpressionsContainer}>
           {expressionList.map((expression) => (
             <Card
               key={expression.id}
+              id={expression.id}
               title={expression.title}
               description={expression.description}
               icon={expression.icon}
@@ -33,7 +33,7 @@ export default function PopularExpressions() {
               explanation={expression.explanation}
               example={expression.example}
               useCase={expression.useCase}
-              onClick = {handleClick}
+              clickFunction={handleClick}
             />
           ))}
         </div>
