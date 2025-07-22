@@ -2,6 +2,19 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/navbar.module.css";
 export default function Navbar() {
   const [hover, setHover] = useState(false);
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       if (window.scrollY > 50) {
+//         setHover(true);
+//       } else {
+//         setHover(false);
+//       }
+//     };
+//     window.addEventListener("scroll", handleScroll);
+//     return () => {
+//       window.removeEventListener("scroll", handleScroll);
+//     };
+//   }, []);
 
   function handleMouseEnter() {
     setHover(true);
